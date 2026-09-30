@@ -1,2 +1,2 @@
 # LOCALFOLKCIC.github.io
-A site for Huddersfield based Arts company, LOCAL FOLK CIC.
+A site for Yorkshire music organisation LOCAL FOLK C.I.C
