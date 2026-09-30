@@ -64,9 +64,14 @@
   .photos { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
   .photo {
     flex: 1 1 200px; min-height: 140px; border-radius: 10px;
+    width: 100%; object-fit: cover;
     display: flex; align-items: center; justify-content: center;
     font-size: 0.85rem; font-family: system-ui, sans-serif; color: rgba(255,255,255,.85);
     text-align: center;
+  }
+  .choir-poster {
+    display: block; width: 100%; max-width: 420px; height: auto;
+    margin: 1.5rem auto; border-radius: 10px;
   }
   .p1 { background: repeating-linear-gradient(45deg, #3d5a3f, #3d5a3f 14px, #46654a 14px, #46654a 28px); }
   .p2 { background: repeating-linear-gradient(45deg, #b5473b, #b5473b 14px, #c25a4e 14px, #c25a4e 28px); }
@@ -185,6 +190,7 @@
       <p style="margin-top:1rem"><span class="hand">Just turn up or drop us a message and we'll make sure you get a warm welcome.</span></p>
       <button class="cta" onclick="show('contact')">Sign up / ask a question →</button>
     </div>
+    <img class="choir-poster" src="images/BirkbyCommChoirPoster4.jpg" alt="Birkby Community Choir poster" width="2480" height="3508" loading="lazy" />
   </div>
 </section>
 
