@@ -77,6 +77,20 @@
   .p1 { background: repeating-linear-gradient(45deg, #3d5a3f, #3d5a3f 14px, #46654a 14px, #46654a 28px); }
   .p2 { background: repeating-linear-gradient(45deg, #b5473b, #b5473b 14px, #c25a4e 14px, #c25a4e 28px); }
   .p3 { background: repeating-linear-gradient(45deg, #8a6d3b, #8a6d3b 14px, #9c7d47 14px, #9c7d47 28px); }
+  .person { padding: 1.25rem; }
+  .person h2 { font-size: 1.4rem; }
+  .person-details { display: flex; align-items: flex-start; gap: 1.25rem; }
+  .person-photo {
+    flex: 0 0 220px; width: 220px; height: 165px; object-fit: cover; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem; color: rgba(255,255,255,.9); text-align: center;
+    font: 0.9rem system-ui, sans-serif;
+  }
+  .person-bio { flex: 1; }
+  @media (max-width: 560px) {
+    .person-details { flex-direction: column; }
+    .person-photo { flex-basis: auto; width: 100%; height: auto; aspect-ratio: 4 / 3; }
+  }
   .card {
     background: #fff; border: 2px solid var(--cream-dark); border-radius: 12px;
     padding: 1.5rem; margin: 1.25rem 0;
@@ -129,6 +143,7 @@
     <button id="nav-home" class="active" onclick="show('home')">LOCAL FOLK</button>
     <button id="nav-choir" onclick="show('choir')">Birkby Community Choir</button>
     <button id="nav-efmo" onclick="show('efmo')">Folk Orchestra</button>
+    <button id="nav-people" onclick="show('people')">People</button>
     <button id="nav-contact" onclick="show('contact')">Contact</button>
   </nav>
 </header>
@@ -222,7 +237,41 @@
   </div>
 </section>
 
-<!-- ============ PAGE 4: CONTACT ============ -->
+<!-- ============ PAGE 4: PEOPLE ============ -->
+<section id="page-people" class="page">
+  <div class="hero">
+    <h1>People</h1>
+    <p>Meet the people behind LOCAL FOLK.</p>
+  </div>
+  <div class="wrap">
+    <article class="card person">
+      <h2><strong>Sam Hodgson</strong></h2>
+      <div class="person-details">
+        <img class="person-photo" src="images/SamHodgson.jpg" alt="Sam Hodgson" loading="lazy" />
+        <div class="person-bio">
+          <p>Sam has collaborated with some of the most pioneering community music organisations and projects in the North, including Live Music Now, Yorkshire Youth and Music, Swan Song, AMP, Under the Stars, Grimm &amp; Co, and Let’s Go Yorkshire. He has facilitated songwriting in high-security prisons, with NEET and SEN children, with children and adults with learning differences, and as a university lecturer.</p>
+          <p style="margin-top:0.8rem">Sam is passionate about using music to support the well-being of communities and individuals, always championing participant-led activity and the belief that enormous creative potential exists within each person. He has a master’s degree in Songwriting for Place, an updated DBS, regular safeguarding training, PLI, and certified training from the International Organisation for Migration.</p>
+        </div>
+      </div>
+    </article>
+    <article class="card person">
+      <h2><strong>Christine Avis</strong></h2>
+      <div class="person-details">
+        <img class="person-photo" src="images/ChristineAvis.jpg" alt="Christine Avis" loading="lazy" />
+        <div class="person-bio"><p>Christine is an accomplished cellist and musician. Playing with bands, touring, recording, singing, composing, and songwriting are all skills she uses regularly. She has a bachelor’s degree in music.</p></div>
+      </div>
+    </article>
+    <article class="card person">
+      <h2><strong>Michelle Goodwin</strong></h2>
+      <div class="person-details">
+        <img class="person-photo" src="images/MichelleBella.jpg" alt="Michelle Goodwin" loading="lazy" />
+        <div class="person-bio"><p>Michelle is a holistic health, wellness, and yoga practitioner based in Huddersfield, West Yorkshire. She has worked with Growing Works, a West Yorkshire-based charity focusing on outdoor therapeutic horticulture and mental well-being, and previously practised with Mizan Therapy, a traditional reproductive and digestive wellness therapy. Known for her soft, gentle, and accessible approach to yoga, she notably introduced unique styles such as Reggae Yoga at local regional festivals.</p></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PAGE 5: CONTACT ============ -->
 <section id="page-contact" class="page">
   <div class="wrap">
     <h2>Contact us</h2>
