@@ -81,15 +81,13 @@
   .person h2 { font-size: 1.4rem; }
   .person-details { display: flex; align-items: flex-start; gap: 1.25rem; }
   .person-photo {
-    flex: 0 0 220px; width: 220px; height: 165px; object-fit: cover; border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    padding: 1rem; color: rgba(255,255,255,.9); text-align: center;
-    font: 0.9rem system-ui, sans-serif;
+    flex: 0 0 180px; width: 180px; aspect-ratio: 3 / 4;
+    object-fit: cover; border-radius: 10px;
   }
   .person-bio { flex: 1; }
   @media (max-width: 560px) {
     .person-details { flex-direction: column; }
-    .person-photo { flex-basis: auto; width: 100%; height: auto; aspect-ratio: 4 / 3; }
+    .person-photo { flex-basis: auto; width: min(100%, 240px); }
   }
   .card {
     background: #fff; border: 2px solid var(--cream-dark); border-radius: 12px;
